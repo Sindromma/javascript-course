@@ -60,12 +60,65 @@
     <!--Задание_4 (Доделываю)-->
     <script>
         'use strict'
-        function sum(num1,num2) {
-            return (num1+num2);
-        }
-        
-        sum(3,5)
 
+        function sum(num1, num2) {
+            return (num1 + num2);
+        }
+
+        sum(3, 5)
+
+    </script>
+    <script>
+        'use strict'
+
+        function diff(num1, num2) {
+            return (num1 - num2);
+        }
+
+        diff(3, 5)
+
+    </script>
+    <script>
+        'use strict'
+
+        function division(num1, num2) {
+            return (num1 / num2);
+        }
+
+        division(3, 5)
+
+    </script>
+
+    <script>
+        'use strict'
+
+        function multi(num1, num2) {
+            return (num1 * num2);
+        }
+
+        multi(3, 5)
+
+    </script>
+
+   <!--Задание_5-->
+    <script>
+        'use strict'
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "sum":
+                    return (arg1 + arg2);
+                case "diff":
+                    return (arg1 - arg2);
+                case "division":
+                    return (arg1 / arg2);
+                case "multi":
+                    return (arg1 * arg2);
+                default:
+                    console.log("я не знаю такой операции");
+            }
+        }
+        mathOperation(7, 8, "multi")
 
     </script>
 
