@@ -9,22 +9,22 @@
 <body>
     <!--Задание_2-->
 
-    <!-- <script>
+   <script>
         'use strict';
         for (let i = 0; i <= 10; i++) {
             if (i === 0) {
                 alert(0 + " - это ноль");
-            } else if (i % 2 == true) {
-                alert(i + " - нечетное число");
-            } else {
+            } else if (i % 2 === 0) {
                 alert(i + " - четное число");
+            } else {
+                alert(i + " - нечетное число");
             }
         }
 
-    </script> -->
+    </script>
 
     <!--Задание_3-->
-    <script>
+  <script>
         "use strict";
         const post = {
             author: "John", //вывести этот текст 
@@ -57,7 +57,7 @@
     </script>
 
     <!--Задание_4-->
-   <!-- <script>
+    <script>
         "use strict";
         const products = [{
                 id: 3,
@@ -78,7 +78,7 @@
             alert("Стоимость с учетом скидки в 15%: " + discount)
         });
 
-    </script>-->
+    </script>
     <!--Задание_5-->
     <script>
         "use strict";
@@ -109,8 +109,42 @@
                 price: 78,
             },
         ];
-        const result = products.filter(product =>product.photos>0);
+        const result = products.filter(product => product.photos && product.photos.length > 0);
         console.log(result);
+
+        products.sort(function(a, b) {
+            return a.price - b.price;
+        });
+        console.log(products);
+
+    </script>
+
+    <!--Задание_6-->
+
+    <script>
+        'use strict';
+
+        function compare(i) {
+            if (i <= 9) {
+                console.log(i);
+                return true;
+            } else {
+                return false;
+            }     
+        };
+
+        for (let i = 0; compare(i); i++) {};
+
+    </script>
+
+   <!--Задание_7-->
+    <script>
+        'use strict';
+        let str = "";
+        for (let v = 0; v <= 20; v++) {
+            str = str + "x";
+            console.log(str);
+        }
 
     </script>
 </body>
